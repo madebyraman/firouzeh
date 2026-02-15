@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="googlebot" content="noindex, nofollow, noarchive">
-<meta name="bingbot" content="noindex, nofollow, noarchive">
 <title>دست سازه‌های نقره رامان </title>
 
 <style>
@@ -22,6 +20,7 @@
     --muted: #666;
     --accent: #c6a25b;
     --card: #ffffff;
+    --accordion-bg: #f4f4f4;
 }
 
 *{
@@ -55,7 +54,7 @@ body{
 
 .logo{
     margin-bottom: 40px;
-    text-align: center; /* جهت اطمینان از وسط‌چینی محتوا */
+    text-align: center;
 }
 
 .logo img {
@@ -63,7 +62,6 @@ body{
     width: 100%; 
     height: auto;
     display: block;
-    /* این خط باعث وسط‌چین شدن تصویر می‌شود: */
     margin: 0 auto; 
 }
 
@@ -105,6 +103,62 @@ p{
     color: #999;
     text-align: center;
 }
+
+/* --- استایل‌های جدید برای آکاردئون --- */
+.accordion {
+    background-color: var(--accordion-bg);
+    color: var(--text);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Dana', sans-serif;
+    transition: 0.4s;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* رنگ دکمه وقتی موس روی آن است یا فعال است */
+.active, .accordion:hover {
+    background-color: #eaeaea;
+}
+
+/* آیکون مثبت و منفی کنار آکاردئون */
+.accordion:after {
+    content: '\002B'; /* یونیکود علامت مثبت */
+    color: var(--accent);
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.active:after {
+    content: "\2212"; /* یونیکود علامت منفی */
+}
+
+/* پنل مخفی که باز می‌شود */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-bottom: 5px;
+}
+
+.panel p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--muted);
+}
 </style>
 </head>
 
@@ -112,32 +166,52 @@ p{
 
 <div class="container">
 
-<div class="logo">
-    <img src="logoraman.png" alt="لوگوی جواهرات رامان">
+    <div class="logo">
+        <img src="logoraman.png" alt="لوگوی جواهرات رامان">
+    </div>
+
+    <h1>راهنمای نگهداری زیورآلات</h1>
+
+    <p>
+    از انتخاب شما سپاسگزاریم. تمامی محصولات رامان با نقره استرلینگ ساخته شده‌اند و به صورت دست‌ساز پرداخت می‌شوند.
+    </p>
+
+    <button class="accordion">نگهداری سنگ‌های حساس</button>
+    <div class="panel">
+      <p>
+        سنگ‌هایی مانند <strong>فیروزه، لاجورد و مروارید</strong> ساختاری زنده و ارگانیک دارند. این سنگ‌ها در برابر مواد شیمیایی بسیار آسیب‌پذیر هستند.
+        <br><br>
+        • از تماس مستقیم عطر، اسپری مو و کرم‌های آرایشی با این سنگ‌ها اکیداً خودداری کنید.
+        <br>
+        • فیروزه در اثر چربی و مواد شیمیایی تغییر رنگ می‌دهد (ملیله می‌شود).
+        <br>
+        • برای تمیز کردن، فقط از یک پارچه نخی خشک استفاده کنید و هرگز از آب داغ استفاده نکنید.
+      </p>
+    </div>
+
+    <button class="accordion">نوسازی و براق کردن نقره</button>
+    <div class="panel">
+      <p>
+        نقره فلزی واکنش‌پذیر است و در مجاورت هوا به مرور زمان اکسید (سیاه) می‌شود. این یک فرآیند طبیعی است و نشانه اصالت فلز است.
+        <br><br>
+        • بهترین روش: استفاده از دستمال‌های مخصوص پولیش طلا و نقره است که حاوی مواد پاک‌کننده هستند.
+        <br>
+        • روش خانگی: شستشو با محلول آب ولرم و کمی مایع ظرفشویی ملایم و سپس خشک کردن کامل با سشوار.
+        <br>
+        • هنگام ورزش یا شنا زیورآلات خود را درآورید تا از کدر شدن زودرس جلوگیری شود.
+      </p>
+    </div>
+    <div class="divider"></div>
+
+    <a href="#" class="button">ارتباط با ما</a>
+
+    <div class="footer">
+    © دست‌سازه‌های رامان
+    </div>
+
 </div>
 
-<h1>راهنمای نگهداری زیورآلات</h1>
-
-<p>
-از انتخاب شما سپاسگزاریم. تمامی محصولات رامان با نقره استرلینگ ساخته شده‌اند و به صورت دست‌ساز پرداخت می‌شوند.
-</p>
-
-<p>
-برای حفظ درخشندگی نقره:
-• از تماس با عطر و مواد شیمیایی خودداری کنید  
-• پس از استفاده داخل جعبه نگهداری شود  
-• با پارچه نرم مخصوص نقره تمیز شود
-</p>
-
-<div class="divider"></div>
-
-<a href="#" class="button">ارتباط با ما</a>
-
-<div class="footer">
-© دست‌سازه‌های رامان
-</div>
-
-</div>
+<script src="script.js"></script>
 
 </body>
 </html>
