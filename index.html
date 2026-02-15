@@ -6,6 +6,8 @@
 <meta name="robots" content="noindex, nofollow, noarchive">
 <title>دست سازه‌های نقره رامان </title>
 
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
 <style>
 @font-face {
     font-family: 'Dana';
@@ -18,7 +20,7 @@
     --bg: #f8f8f8;
     --text: #111;
     --muted: #666;
-    --accent: #c6a25b;
+    --accent: #c6a25b; /* رنگ طلایی برند */
     --card: #ffffff;
     --accordion-bg: #f4f4f4;
 }
@@ -82,21 +84,6 @@ p{
     margin: 30px 0;
 }
 
-.button{
-    display: inline-block;
-    padding: 12px 22px;
-    border-radius: 12px;
-    background: var(--accent);
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s ease;
-}
-
-.button:hover{
-    opacity: 0.85;
-}
-
 .footer{
     margin-top: 40px;
     font-size: 13px;
@@ -104,7 +91,7 @@ p{
     text-align: center;
 }
 
-/* --- استایل‌های جدید برای آکاردئون --- */
+/* --- استایل‌های آکاردئون --- */
 .accordion {
     background-color: var(--accordion-bg);
     color: var(--text);
@@ -125,14 +112,12 @@ p{
     align-items: center;
 }
 
-/* رنگ دکمه وقتی موس روی آن است یا فعال است */
 .active, .accordion:hover {
     background-color: #eaeaea;
 }
 
-/* آیکون مثبت و منفی کنار آکاردئون */
 .accordion:after {
-    content: '\002B'; /* یونیکود علامت مثبت */
+    content: '\002B';
     color: var(--accent);
     font-weight: bold;
     float: left;
@@ -141,10 +126,9 @@ p{
 }
 
 .active:after {
-    content: "\2212"; /* یونیکود علامت منفی */
+    content: "\2212";
 }
 
-/* پنل مخفی که باز می‌شود */
 .panel {
     padding: 0 18px;
     background-color: white;
@@ -159,6 +143,38 @@ p{
     font-size: 14px;
     color: var(--muted);
 }
+
+/* --- استایل‌های جدید برای شبکه اجتماعی --- */
+.social-links {
+    display: flex;
+    justify-content: center; /* وسط‌چین کردن آیکون‌ها */
+    align-items: center;
+    gap: 20px; /* فاصله بین آیکون‌ها */
+    margin-top: 30px;
+}
+
+.social-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* دایره‌ای کردن */
+    background-color: var(--bg); /* رنگ پس‌زمینه دکمه */
+    color: var(--accent); /* رنگ آیکون (هم‌رنگ برند) */
+    text-decoration: none;
+    font-size: 24px; /* سایز آیکون */
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.social-btn:hover {
+    background-color: var(--accent);
+    color: #fff; /* سفید شدن آیکون هنگام هاور */
+    transform: translateY(-3px); /* حرکت جزیی به بالا */
+    box-shadow: 0 5px 15px rgba(198, 162, 91, 0.3);
+}
+
 </style>
 </head>
 
@@ -179,31 +195,40 @@ p{
     <button class="accordion">نگهداری سنگ‌های حساس</button>
     <div class="panel">
       <p>
-        سنگ‌هایی مانند <strong>فیروزه، لاجورد و مروارید</strong> ساختاری زنده و ارگانیک دارند. این سنگ‌ها در برابر مواد شیمیایی بسیار آسیب‌پذیر هستند.
+        سنگ‌هایی مانند <strong>فیروزه، لاجورد و مروارید</strong> ساختاری زنده و ارگانیک دارند.
         <br><br>
         • از تماس مستقیم عطر، اسپری مو و کرم‌های آرایشی با این سنگ‌ها اکیداً خودداری کنید.
         <br>
-        • فیروزه در اثر چربی و مواد شیمیایی تغییر رنگ می‌دهد (ملیله می‌شود).
-        <br>
-        • برای تمیز کردن، فقط از یک پارچه نخی خشک استفاده کنید و هرگز از آب داغ استفاده نکنید.
+        • برای تمیز کردن، فقط از یک پارچه نخی خشک استفاده کنید.
       </p>
     </div>
 
     <button class="accordion">نوسازی و براق کردن نقره</button>
     <div class="panel">
       <p>
-        نقره فلزی واکنش‌پذیر است و در مجاورت هوا به مرور زمان اکسید (سیاه) می‌شود. این یک فرآیند طبیعی است و نشانه اصالت فلز است.
+        نقره فلزی واکنش‌پذیر است و در مجاورت هوا اکسید می‌شود.
         <br><br>
-        • بهترین روش: استفاده از دستمال‌های مخصوص پولیش طلا و نقره است که حاوی مواد پاک‌کننده هستند.
+        • بهترین روش: استفاده از دستمال‌های مخصوص پولیش طلا و نقره.
         <br>
-        • روش خانگی: شستشو با محلول آب ولرم و کمی مایع ظرفشویی ملایم و سپس خشک کردن کامل با سشوار.
-        <br>
-        • هنگام ورزش یا شنا زیورآلات خود را درآورید تا از کدر شدن زودرس جلوگیری شود.
+        • روش خانگی: شستشو با محلول آب ولرم و کمی مایع ظرفشویی ملایم.
       </p>
     </div>
+
     <div class="divider"></div>
 
-    <a href="#" class="button">ارتباط با ما</a>
+    <div class="social-links">
+        <a href="#" class="social-btn" title="تلگرام">
+            <i class="ri-telegram-fill"></i>
+        </a>
+        
+        <a href="#" class="social-btn" title="اینستاگرام">
+            <i class="ri-instagram-line"></i>
+        </a>
+        
+        <a href="mailto:info@raman.com" class="social-btn" title="ایمیل">
+            <i class="ri-mail-line"></i>
+        </a>
+    </div>
 
     <div class="footer">
     © دست‌سازه‌های رامان
