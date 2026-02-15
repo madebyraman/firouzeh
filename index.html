@@ -50,11 +50,21 @@ body{
     }
 }
 
+/* استایل کانتینر لوگو تغییر کرد */
 .logo{
-    font-size: 20px;
-    letter-spacing: 2px;
     margin-bottom: 40px;
-    color: var(--accent);
+    /* استایل‌های مربوط به متن (font-size, color, etc) حذف شدند */
+}
+
+/* استایل جدید برای تصویر لوگو */
+.logo img {
+    /* حداکثر عرض 200 پیکسل */
+    max-width: 200px;
+    /* برای اطمینان از اینکه در صفحات خیلی کوچک از کادر بیرون نمیزند */
+    width: 100%; 
+    /* حفظ تناسب طول و عرض تصویر */
+    height: auto;
+    display: block;
 }
 
 h1{
@@ -89,12 +99,11 @@ p{
     opacity: 0.85;
 }
 
-/* تغییرات فوتر در اینجا اعمال شد */
 .footer{
     margin-top: 40px;
     font-size: 13px;
     color: #999;
-    text-align: center; /* وسط‌چین کردن متن */
+    text-align: center;
 }
 </style>
 </head>
@@ -104,7 +113,7 @@ p{
 <div class="container">
 
 <div class="logo">
-RAMAN
+    <img src="logoraman.png" alt="لوگوی جواهرات رامان">
 </div>
 
 <h1>راهنمای محصول</h1>
