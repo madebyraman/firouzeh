@@ -1,1 +1,125 @@
-Hello
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raman Jewelry</title>
+
+<style>
+@font-face {
+    font-family: 'Dana';
+    src: url('dana.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --bg: #f8f8f8;
+    --text: #111;
+    --muted: #666;
+    --accent: #c6a25b;
+    --card: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: var(--bg);
+    font-family: 'Dana', sans-serif;
+    color: var(--text);
+    line-height: 1.9;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container{
+    max-width: 640px;
+    margin: 60px auto;
+    padding: 40px;
+    background: var(--card);
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+}
+
+.logo{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: var(--accent);
+}
+
+h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p{
+    margin-bottom: 16px;
+    color: var(--muted);
+}
+
+.divider{
+    height: 1px;
+    background: #eee;
+    margin: 30px 0;
+}
+
+.button{
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 12px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.button:hover{
+    opacity: 0.85;
+}
+
+.footer{
+    margin-top: 40px;
+    font-size: 13px;
+    color: #999;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+RAMAN
+</div>
+
+<h1>راهنمای محصول</h1>
+
+<p>
+از انتخاب شما سپاسگزاریم. تمامی محصولات رامان با نقره استرلینگ ساخته شده‌اند و به صورت دست‌ساز پرداخت می‌شوند.
+</p>
+
+<p>
+برای حفظ درخشندگی نقره:
+• از تماس با عطر و مواد شیمیایی خودداری کنید  
+• پس از استفاده داخل جعبه نگهداری شود  
+• با پارچه نرم مخصوص نقره تمیز شود
+</p>
+
+<div class="divider"></div>
+
+<a href="#" class="button">ارتباط با ما</a>
+
+<div class="footer">
+© Raman Jewelry
+</div>
+
+</div>
+
+</body>
+</html>
