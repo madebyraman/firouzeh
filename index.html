@@ -36,6 +36,7 @@ body{
 
 .container{
     max-width: 640px;
+    /* فاصله در دسکتاپ */
     margin: 60px auto;
     padding: 40px;
     background: var(--card);
@@ -43,11 +44,13 @@ body{
     box-shadow: 0 10px 40px rgba(0,0,0,0.06);
 }
 
-/* فاصله امن موبایل */
+/* تنظیمات مخصوص موبایل */
 @media (max-width: 768px){
     .container{
-        margin: 30px 20px; /* 5px از چپ و راست */
-        padding: 28px;
+        /* تغییر اصلی اینجاست: */
+        /* 30px از بالا/پایین و 24px از چپ/راست */
+        margin: 30px 24px; 
+        padding: 24px; /* پدینگ داخلی کمی کمتر شد برای فضای بیشتر متن */
     }
 }
 
